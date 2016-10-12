@@ -1,0 +1,18 @@
+# generator info
+name: Rug Archive Project
+group: atomist-project-templates
+artifact: rug-archive
+version: 2.1.1
+
+# backing git repo
+repo: git@github.com:atomist-project-templates/rug-archive.git
+branch: master
+sha: 121da97bc4ae0f8652e64fd1862824e9e547cbd6
+
+# parameter values
+project_name: rug-archive-project
+group_id: mygroup
+version: 0.0.1-SNAPSHOT
+description: My first rug archive project
+editor_name: EditTheWorld
+

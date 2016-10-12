@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>atomist-project-templates</groupId>
+    <artifactId>rug-archive-project</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>rug-archive-project</name>
+    <description>My first rug archive project</description>
+    <parent>
+        <groupId>com.atomist</groupId>
+        <artifactId>rug-parent</artifactId>
+        <version>1.2.1</version>
+        <relativePath>../../</relativePath>
+    </parent>
+    <properties />
+    <dependencyManagement />
+    <dependencies>
+         <dependency>
+              <groupId>com.atomist</groupId>
+              <artifactId>rug-lib</artifactId>
+              <version>[1.0.4-20161004063057,1.1.0)</version>
+          </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>atomist-release</id>
+            <name>Atomist Release</name>
+            <url>https://sforzando.artifactoryonline.com/sforzando/libs-release</url>
+        </repository>
+        <repository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>atomist-snapshots</id>
+            <name>Atomist Snapshots</name>
+            <url>https://sforzando.artifactoryonline.com/sforzando/libs-snapshot</url>
+        </repository>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>atomist-templates-release</id>
+            <name>Atomist Templates Release</name>
+            <url>https://sforzando.artifactoryonline.com/sforzando/public-templates-dev</url>
+        </repository>
+        <repository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>atomist-templates-snapshot</id>
+            <name>Atomist Templates Snapshots</name>
+            <url>https://sforzando.artifactoryonline.com/sforzando/private-templates-dev</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>atomist-release</id>
+            <name>Atomist Release</name>
+            <url>https://sforzando.artifactoryonline.com/sforzando/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>
